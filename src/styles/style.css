@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(./nullstyle.css);
+
+
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #eaeaea;
+
+    height: 100%;
+}
+
+#root{
+    min-height: 100vh;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.container-cart{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.none {
+    display: none;
+}
+
+
+
+
+
+
+
+/* product list */
+
+.section-products {
+    margin-top: 28px;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #838383;
+}
+
+.products-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+
+    width: 350px;
+    height: 407px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.product-img {
+    margin-top: 15px;
+    margin-bottom: 54px;
+}
+
+.product-information {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 27px;
+
+    justify-content: space-between;
+    width: 310px;
+    height: 74px;
+}
+
+.raw-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-title {
+    font-weight: 600;
+    font-size: 17px;
+    color: #1c1c27;
+
+}
+
+.product-price-raw {}
+
+.product-price {
+    font-weight: 600;
+    font-size: 17px;
+    color: #ffa542;
+}
+
+.product-sale {
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: line-through;
+    color: #ffce7f;
+}
+
+.raw-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-score {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.product-rate {
+    font-weight: 600;
+    font-size: 17px;
+    color: #838383;
+}
+
+.buy-btn {
+    font-weight: 600;
+    font-size: 17px;
+    color: #000;
+
+    transition: all 0.2s;
+}
+
+.buy-btn:hover {
+    color: #ffa542;
+}
+
+
+
+
+/* shoppingcar */
+.section-shoppigcar {
+    position: relative;
+}
+
+.shoppigcar-title {
+    margin-top: 29px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #1c1c27;
+}
+
+.cart-list {
+    margin-top: 13px;
+}
+
+.cart-item {
+    padding: 18px 28px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 15px;
+    width: 633px;
+    height: 218px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.item-raw-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.item-img {
+    margin-bottom: 19px;
+}
+
+.raw-btns {
+    display: flex;
+    width: 118px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.minus {}
+
+.number {}
+
+.plus {}
+
+.item-raw-two {
+    
+    align-items: center;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.item-info {
+    width: 350px;
+}   
+
+.item-name {
+    font-weight: 500;
+    font-size: 17px;
+    color: #1c1c27;
+    margin-bottom: 12px;
+}
+
+.item-price {
+    font-weight: 600;
+    font-size: 15px;
+    color: #aaa;
+}
+
+.item-final {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 178px;
+    width: 65px;
+    justify-content: space-between;
+}
+
+.delete-btn {}
+
+.item-fullprise {
+    font-weight: 600;
+    font-size: 15px;
+    text-align: right;
+    color: #1c1c27;
+}
+
+
+.total {
+    position: relative;
+    margin-top: 73px;
+}
+
+.total-raw {
+    display: flex;
+    justify-content: space-between;
+    width: 349px;
+    height: 114px;
+
+    padding-top: 21px;
+    padding-left: 21px;
+    padding-right: 21px;
+
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+
+    font-weight: 600;
+    font-size: 15px;
+    color: #000;
+}
+
+.total-title {}
+
+.total-price {}
+
+.buy-btn-big {
+    position: absolute;
+
+    top: 55px;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    color: #fff;
+
+    border-radius: 20px;
+    width: 348px;
+    height: 65px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+    background: #101010;
+
+    transition: all 0.2s;
+}
+
+.buy-btn-big:hover{
+    background: #FFCE7F;
+    color: #000;
+
+}
